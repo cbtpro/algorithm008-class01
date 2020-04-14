@@ -110,8 +110,9 @@ var plusOne = function(digits) {
   // 判断首位是不是需要进1
   // [10, 0, 0, ……, 0, 0]
   if (digits[0] % 10 === 0) {
-    digits[0] = 0;
-    digits.splice(0, 0, 1);
+    // 因为首位进一，数组长度增加1，同时进位后数组的第一位值是1
+    digits.push(0);
+    digits[0] = 1;
   }
   return digits;
 }
