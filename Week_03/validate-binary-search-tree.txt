@@ -7,6 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  * code for java
+ * 二叉搜索树：整棵树的左节点都小于root小于右节点
  */
 class Solution {
   long last = Long.MIN_VALUE;
